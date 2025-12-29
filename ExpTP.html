@@ -15,6 +15,13 @@
     <a href="#Une Marge Interne en CSS"> Une Marge Interne en CSS</a><br>
     <a href="#Une Marge Externe en CSS"> Une Marge Externe en CSS</a><br>
     <a href="#Les Bordures en CSS">Les Bordures en CSS</a><br>
+    <a href="#Exemple de Bordures en CSS"> Exemple de Bordures en CSS</a><br>
+    <a href="#Les grids en CSS">Les grids en CSS</a><br>
+    <a href="#Exemple de Grids en CSS"> Exemple de Grids en CSS</a><br>
+    <a href="#Les flexbox en CSS">Les flexbox en CSS</a><br>
+    <a href="#Exemple de Flexbox en CSS"> Exemple de Flexbox en CSS</a><br>
+    <a href="#Les animations">Les animations</a><br>    
+    <a href="#Exemple d'Animations en CSS"> Exemple d'Animations en CSS</a><br>
     <a href="#Conclusion">Conclusion</a>
 
  <H1 style="color: rgba(45, 44, 41, 0.783);"><center> INTRODUCTION en CSS</center></H1>
@@ -95,8 +102,43 @@
 .box {
     border: 2px solid black; /* Bordure de 2px, style solide, couleur noire pour tous les côtés */
 }
-            </pre>  
+            </pre>
+             <h2 id="Les grids en CSS" style="color: blueviolet;"><a href="">Les grids en CSS</a></h2>
+                <p>CSS Grid Layout est un système de mise en page bidimensionnel qui permet de créer des mises en page complexes et flexibles sur le web. Il divise une page en une grille composée de lignes et de colonnes, permettant aux développeurs de positionner les éléments de manière précise et contrôlée. Avec CSS Grid, il est possible de créer des mises en page réactives qui s'adaptent à différentes tailles d'écran, offrant ainsi une meilleure expérience utilisateur sur divers appareils.</p>
+            <h3 id="Exemple de Grids en CSS" style="color: blueviolet;"><a href="">Exemple de Grids en CSS</a></h3>
+            <p>Voici un exemple de définition de grilles en CSS :</p>
+            <pre>
+.container {
+    display: grid;                 /* Active le mode grille */  
+    grid-template-columns: 1fr 2fr 1fr; /* Définit trois colonnes avec des fractions */
+    grid-template-rows: auto auto; /* Définit deux lignes avec une hauteur automatique */   
+    gap: 10px;                     /* Espace entre les éléments de la grille */
+}
+            </pre>
+            <h2 id="Les flexbox en CSS" style="color: blueviolet;"><a href="">Les flexbox en CSS</a></h2>
+                <p>CSS Flexbox (Flexible Box Layout) est un modèle de mise en page unidimensionnel qui permet de disposer et d'aligner les éléments dans une seule direction, soit en ligne (horizontalement) soit en colonne (verticalement). Flexbox facilite la création de mises en page flexibles et réactives, en permettant aux éléments de s'adapter automatiquement à l'espace disponible. Il offre des fonctionnalités puissantes pour contrôler l'alignement, la distribution de l'espace et l'ordre des éléments au sein d'un conteneur flexible.</p>
+            <h3 id="Exemple de Flexbox en CSS" style="color: blueviolet;"><a href="">Exemple de Flexbox en CSS</a></h3>
+            <p>Voici un exemple de définition de flexbox en CSS :</p>   
+            <pre>
+.container { 
+    display: flex;                /* Active le mode flexbox */
+    flex-direction: row;         /* Dispose les éléments en ligne (horizontalement) */  
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center;         /* Aligne les éléments verticalement au centre */
+}
+            </pre>
+            <h2 id="Les animations" style="color: blueviolet;"><a href="">Les animations</a></h2>
+                <p>Les animations en CSS permettent de créer des effets visuels dynamiques en modifiant les propriétés des éléments HTML au fil du temps. Grâce aux animations CSS,<br> les développeurs peuvent ajouter du mouvement et de l'interactivité à leurs pages web, améliorant ainsi l'expérience utilisateur. Les animations peuvent être utilisées pour attirer l'attention sur des éléments spécifiques, indiquer des changements d'état ou simplement rendre l'interface plus attrayante.</p>
+            <h3 id="Exemple d'Animations en CSS" style="color: blue violet;"><a href="">Exemple d'Animations en CSS</a></h3>
+            <p>Voici un exemple de définition d'animations en CSS :</p> 
+            <pre>
+@keyframes example {
+    0% { background-color: red; left: 0px; top: 0px; }
+    50% { background-color: yellow; left: 100px; top:   
+100px; }
+    100% { background-color: green; left: 0px; top: 0px; }
+}
             <h1 id="Conclusion" style="color: blue;"><a href=""></a>Conclusion</h1>
-            <p>En résumé, les marges et les bordures en CSS sont des outils essentiels pour contrôler l'apparence et la disposition des éléments sur une page web. Les marges créent de l'espace autour des éléments, tandis que les bordures définissent leurs contours. En utilisant ces propriétés de manière appropriée, les développeurs web peuvent améliorer la lisibilité, l'esthétique et la convivialité des sites web.</p>
+            <p>En résumé, les marges et les bordures en CSS sont des outils essentiels pour contrôler l'apparence et la disposition des éléments sur une page web. Les marges créent <br> de l'espace autour des éléments, tandis que les bordures définissent leurs contours. En utilisant ces propriétés de manière appropriée, les développeurs web peuvent améliorer la lisibilité, l'esthétique et la convivialité des sites web.</p>
 </body>
 </html>
